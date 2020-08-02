@@ -8,8 +8,8 @@ pio run -e chitu_f103
 
     udisksctl mount -b /dev/mmcblk0p1
     md5sum .pio/build/chitu_f103/update.cbd
-    cp .pio/build/chitu_f103/update.cbd /run/media/cab/disk/
-    md5sum /run/media/cab/disk/update.cbd
+    cp .pio/build/chitu_f103/update.cbd /run/media/$USER/disk/
+    md5sum /run/media/$USER/disk/update.cbd
     udisksctl unmount -b /dev/mmcblk0p1
 
 }
