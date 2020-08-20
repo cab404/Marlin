@@ -2,7 +2,7 @@
 
 # encryption stage does not rerun after elf is recompiled
 rm .pio/build/chitu_f103/firmware.*
-pio run -e chitu_f103
+nix-shell -p platformio --run 'pio run -e chitu_f103'
 
 [ -e /dev/mmcblk0p1 ] && {
 
